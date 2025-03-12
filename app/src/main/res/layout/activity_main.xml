@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <Button
+        android:id="@+id/calibrateButton"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/connectButton"
+        android:layout_marginTop="9dp"
+        android:text="Калибровать" />
+
+    <SeekBar
+        android:id="@+id/sensitivityBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calibrateButton"
+        android:layout_marginTop="26dp"
+        android:max="10000"
+        android:progress="50" />
+
+    <Button
+        android:id="@+id/moveButton"
+        android:layout_width="381dp"
+        android:layout_height="154dp"
+        android:layout_below="@id/calibrateButton"
+        android:layout_marginTop="284dp"
+        android:text="Перемещать" />
+
+    <Button
+        android:id="@+id/leftButton"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:text="LMB"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"/>
+
+    <Button
+        android:id="@+id/rightButton"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:text="RMB"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"/>
+
+    <SeekBar
+        android:id="@+id/scrollBar"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:rotation="90"
+        android:max="100"
+        android:progress="50"
+        android:layout_centerInParent="true"/>
+
+    <EditText
+        android:id="@+id/ipEditText"
+        android:layout_width="380dp"
+        android:layout_height="59dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:hint="Введите IP сервера" />
+
+    <Button
+        android:id="@+id/connectButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Подключиться"
+        android:layout_below="@id/ipEditText"
+        android:layout_marginBottom="16dp"/>
+</RelativeLayout>

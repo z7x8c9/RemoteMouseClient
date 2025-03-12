@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Remote Mouse</string>
+    <string name="connect_button">Подключиться</string>
+    <string name="ip_hint">Введите IP сервера</string>
+</resources>
